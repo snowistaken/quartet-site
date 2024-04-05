@@ -70,7 +70,6 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
 }
 .section{
   width: 66%;
