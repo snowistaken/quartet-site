@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuartetSite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <div class="head">
+      <div class="headerobjectswrapper">
+        <div class="logobox">
+          <%= link_to homepage_path  do %>
+            <%= image_tag("youtalkintome.png", size: "56x56") %>
+          <% end %>
+        </div>
+        <header>Quartet Name :)</header>
+        <div></div>
+      </div>
+    </div>
+  </head>
+
+  <body>
+    <div class="subhead">
+      <%= link_to("Home", "/", class: "link") %>
+      <%= link_to("About", "/about", class: "link") %>
+      <%= link_to("Contact", "/contact", class: "link") %>
+    </div>
+    <%= yield %>
+  </body>
+</html>
